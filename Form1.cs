@@ -15,6 +15,8 @@ namespace PedidosApp_WalterBenitez
         public Form1()
         {
             InitializeComponent();
+            cmbProducto.Items.AddRange(new string[] { "tecnología", "accesorio", "componente" });
+            cmbProducto.SelectedIndex = 0;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
