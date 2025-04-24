@@ -28,136 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.nudPeso = new System.Windows.Forms.NumericUpDown();
+            this.nudDistancia = new System.Windows.Forms.NumericUpDown();
+            this.chkUrgente = new System.Windows.Forms.CheckBox();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.lblProducto = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.lblResultado = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDistancia)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(167, 133);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtCliente.Location = new System.Drawing.Point(214, 134);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtCliente.TabIndex = 0;
+            this.txtCliente.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // btnCalcular
             // 
-            this.button1.Location = new System.Drawing.Point(360, 280);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalcular.Location = new System.Drawing.Point(339, 281);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(102, 23);
+            this.btnCalcular.TabIndex = 1;
+            this.btnCalcular.Text = "Calcular Pedido";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // numericUpDown1
+            // nudPeso
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(466, 214);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown1.TabIndex = 2;
+            this.nudPeso.Location = new System.Drawing.Point(466, 214);
+            this.nudPeso.Name = "nudPeso";
+            this.nudPeso.Size = new System.Drawing.Size(52, 20);
+            this.nudPeso.TabIndex = 2;
             // 
-            // numericUpDown2
+            // nudDistancia
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(276, 214);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(52, 20);
-            this.numericUpDown2.TabIndex = 3;
+            this.nudDistancia.Location = new System.Drawing.Point(276, 214);
+            this.nudDistancia.Name = "nudDistancia";
+            this.nudDistancia.Size = new System.Drawing.Size(52, 20);
+            this.nudDistancia.TabIndex = 3;
             // 
-            // checkBox1
+            // chkUrgente
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(355, 184);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkUrgente.AutoSize = true;
+            this.chkUrgente.Location = new System.Drawing.Point(355, 184);
+            this.chkUrgente.Name = "chkUrgente";
+            this.chkUrgente.Size = new System.Drawing.Size(70, 17);
+            this.chkUrgente.TabIndex = 4;
+            this.chkUrgente.Text = "Urgente?";
+            this.chkUrgente.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbProducto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(511, 133);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(511, 133);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(121, 21);
+            this.cmbProducto.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(372, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(72, 13);
             this.label1.TabIndex = 6;
-            this.label1.Text = "label1";
+            this.label1.Text = "Pedidos_APP";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // lblCliente
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 117);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "label2";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Location = new System.Drawing.Point(211, 117);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(76, 13);
+            this.lblCliente.TabIndex = 7;
+            this.lblCliente.Text = "NombreCliente";
+            this.lblCliente.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lblProducto
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(508, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "label3";
+            this.lblProducto.AutoSize = true;
+            this.lblProducto.Location = new System.Drawing.Point(508, 117);
+            this.lblProducto.Name = "lblProducto";
+            this.lblProducto.Size = new System.Drawing.Size(50, 13);
+            this.lblProducto.TabIndex = 8;
+            this.lblProducto.Text = "Producto";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(273, 188);
+            this.label4.Location = new System.Drawing.Point(211, 185);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(117, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "label4";
+            this.label4.Text = "Peso del producto (KG)";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(463, 188);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(116, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "label5";
+            this.label5.Text = "Distancia en kilometros";
+            // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(369, 117);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(0, 13);
+            this.lblResultado.TabIndex = 11;
+            this.lblResultado.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblProducto);
+            this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cmbProducto);
+            this.Controls.Add(this.chkUrgente);
+            this.Controls.Add(this.nudDistancia);
+            this.Controls.Add(this.nudPeso);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtCliente);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nudPeso)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDistancia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -165,17 +180,18 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.Button btnCalcular;
+        private System.Windows.Forms.NumericUpDown nudPeso;
+        private System.Windows.Forms.NumericUpDown nudDistancia;
+        private System.Windows.Forms.CheckBox chkUrgente;
+        private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.Label lblProducto;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblResultado;
     }
 }
 
