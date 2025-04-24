@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace PedidosApp_WalterBenitez
 {
-    internal class EntregaMoto
+    public class EntregaMoto : IMetodoEntrega
     {
+        public double CalcularCosto(int km) => 10 * km;
+        public string TipoEntrega() => "Motocicleta";
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace PedidosApp_WalterBenitez
 {
-    internal class IMetodoEntrega
+    public interface IMetodoEntrega
     {
-
+        double CalcularCosto(int km);
+        string TipoEntrega();
     }
 }
