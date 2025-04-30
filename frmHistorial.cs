@@ -16,7 +16,7 @@ namespace PedidosApp_WalterBenitez
         {
             InitializeComponent();
 
-            cmbFiltro.Items.AddRange(new string[] { "Todos", "Tecnología", "Accesorio", "Componente" });
+            cmbFiltro.Items.AddRange(new string[] { "Todos", "Motocicleta", "dron", "camion", "Bicileta" });
             cmbFiltro.SelectedIndex = 0;
         }
 
