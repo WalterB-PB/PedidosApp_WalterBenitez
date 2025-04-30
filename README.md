@@ -56,35 +56,8 @@ Configuraciones de la app: Que todas las clases lean la misma configuración sin
 Conexiones a bases de datos: Para reutilizar la misma conexión en vez de abrir una nueva por cada operación.
 ¡Pero con cuidado!: Singleton puede ser un antipatrón si se abusa, ya que dificulta los tests y oculta dependencias. Usarlo solo cuando realmente se necesita una única instancia global.
 
+Capturas Funcionamiento 
 
-Todo funcionando menos urgente
-
-
-
-con urgencia marcado
-
-
-
-validación sin nombre cliente
-
-
-validacion sin distancia
-
-
-
-Validacion sin peso
-
-
-
-
-
-todo funcional 
-
-
-
-Historial 
-
-
-
+https://docs.google.com/document/d/1IMpxVOv_236Rdj_d7vXP9YXo3q4f3r68J-cxXGXpCgM/edit?usp=sharing
 
 
