@@ -15,7 +15,7 @@ namespace PedidosApp_WalterBenitez
         public Form1()
         {
             InitializeComponent();
-            cmbProducto.Items.AddRange(new string[] { "tecnología", "accesorio", "componente" });
+            cmbProducto.Items.AddRange(new string[] { "Tecnología", "Accesorio", "Componente" });
             cmbProducto.SelectedIndex = 0;
         }
 
@@ -69,6 +69,11 @@ namespace PedidosApp_WalterBenitez
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frmHistorial().ShowDialog();
         }
     }
 }
