@@ -57,3 +57,34 @@ Conexiones a bases de datos: Para reutilizar la misma conexión en vez de abrir 
 ¡Pero con cuidado!: Singleton puede ser un antipatrón si se abusa, ya que dificulta los tests y oculta dependencias. Usarlo solo cuando realmente se necesita una única instancia global.
 
 
+Todo funcionando menos urgente
+
+
+
+con urgencia marcado
+
+
+
+validación sin nombre cliente
+
+
+validacion sin distancia
+
+
+
+Validacion sin peso
+
+
+
+
+
+todo funcional 
+
+
+
+Historial 
+
+
+
+
+
